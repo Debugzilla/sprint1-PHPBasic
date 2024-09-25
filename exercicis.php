@@ -116,7 +116,7 @@ echo "El producto total de las variables (30 * 10 * 12.99 * 3.14) = " .$Producte
 
 //Crea una funció Calculadora que entri dos nombres per paràmetre, i en un tercer paràmetre et permeti fer la suma, la resta, la multiplicació o la divisió dels dos nombres.
 
-
+echo "<u>Exercici 4</u>" ."<br/>";
 function Calculadora($param1, $param2, $opt) {
     // Cuerpo de la función
 
@@ -170,7 +170,7 @@ Calculadora(20, 15, 0);
 //A mes aquesta funció ha de tenir un segon parametre que indiqui de quant a quant es compta(de 1en 1, d 2 en 2..)
 //El compte s'ha de mostrar per pantalla pas a pas
 
-
+echo "<u>Exercici 4</u>" ."<br/>";
 function contar($num = 10, $increment = 1) {
 
     for ($i = 0; $i <= $num; $i += $increment) {
@@ -213,15 +213,27 @@ contar(19,1);
 //Ejemplo sin valores (por defecto 10)
 contar();
 
+echo "<u>Exercici 5</u>" ."<br/>";
+function avaluar($nota) {
+    if ($nota >= 60 ) {
+        echo "Es de primera división";
+    } else if ($nota >= 45) {
+        echo "Es de segunda división";
+    } else if ($nota >=33) {
+        echo "Es de tercera división";
+    } else  {
+        echo "Esta suspendido";
+    }
+
+    
+
+}
 
 
-
-
-
-
-
-
-
+avaluar(44) . "<br/>";
+avaluar(32) . "<br/>";
+avaluar(12) . "<br/>";
+avaluar(45) . "<br/>";
 
 
 
