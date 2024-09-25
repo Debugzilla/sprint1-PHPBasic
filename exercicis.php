@@ -55,8 +55,112 @@ $Content = " Aquest és el curs de PHP";
 echo $V_Hola  . $Content  ."<br/><br/>";
 
 
+//Exercici 3
+//Declara dues variables X i Y de tipus INT
+//dues variables de tipus double de tipu double i assigna a cadascuna un valor. 
+
+$X = 10;
+$Y = 30;
+$N = 3.14;
+$M = 12.99;
+
+//Per a X i Y 
+//Valor de cada variable
+echo "<u>Exercici 3</u>" ."<br/>";
+echo "Valor de X = ". $X . "<br/>";
+echo "Valor de Y = ". $Y . "<br/>";
+
+//La suma
+echo "La suma de  X  +  Y  = ". ($X + $Y) . "<br/>";
+//La resta
+echo "La resta de  Y  -  X  = ". ($Y - $X) . "<br/>";
+//El producte
+echo "El producte de  X  *  Y  = ". ($X * $Y) . "<br/>";
+//El modul
+echo "El modul de  X  %  Y  = ". ($Y % $X) . "<br/>";
 
 
+//Per N i M realitzaràs el mateix.
+//valor de cada variable
+echo "Valor de M = ". $M . "<br/>";
+echo "Valor de N = ". $N . "<br/>";
+//La suma
+echo "La suma de  M  +  N  = ". ($M + $N) . "<br/>";
+//La resta
+echo "La resta de  M  -  N  = ". ($M - $N) . "<br/>";
+//El producte
+echo "El producte de  M  *  N  = ". ($M * $N) . "<br/>";
+//El modul amb flotants no funciona, es necesita el fmod
+echo "El modul de  M  %  N  = ". fmod($M,$N) . "<br/>";
+
+//Per a totes les variables (X, Y, N, M):
+
+//El doble de cada variable.
+$DobleX = $X * 2;
+$DobleY = $Y * 2;
+$DobleM = $M * 2;
+$DobleN = $N * 2;
+echo "El doble de X = " . $DobleX . "<br/>";
+echo "El doble de X = " . $DobleY . "<br/>";
+echo "El doble de M = " . $DobleM . "<br/>";
+echo "El doble de N = " . $DobleN . "<br/>";
+
+
+//La suma de totes les variables.
+$SumaTotal = $X + $Y + $M + $N;
+echo "La suma total de las variables (30 + 10 + 12.99 + 3.14) = " .$SumaTotal . "<br/>";
+//El producte de totes les variables.
+$ProducteTotal = $X * $Y * $M * $N;
+echo "El producto total de las variables (30 * 10 * 12.99 * 3.14) = " .$ProducteTotal . "<br/><br/>";
+
+
+//Crea una funció Calculadora que entri dos nombres per paràmetre, i en un tercer paràmetre et permeti fer la suma, la resta, la multiplicació o la divisió dels dos nombres.
+
+
+function Calculadora($param1, $param2, $opt) {
+    // Cuerpo de la función
+
+    if ($opt == 0) {
+        echo "Bienvenidos a la calculadora virtual"  ."<br/>";
+        echo "Habéis seleccionado la opción de sumar" . "<br/>";
+        $Suma = $param1 + $param2;
+        echo "El resultado de la suma es : ". $Suma;
+      
+        
+    }
+
+    else if($opt == 1) {
+
+        echo "Bienvenidos a la calculadora virtual"  ."<br/>";
+        echo "Habéis seleccionado la opción de restar" . "<br/>";
+        $Resta = $param1 - $param2 . "<br/>";
+        echo "El resultado de la resta es : ". $Resta;
+
+    }
+
+    else if($opt == 2) {
+
+        echo "Bienvenidos a la calculadora virtual"  ."<br/>";
+        echo "Habéis seleccionado la opción de multiplicar" . "<br/>";
+        $Multi = $param1 * $param2 . "<br/>";
+        echo "El resultado de la multiplicación es : ". $Multi;
+
+    }
+
+    else if($opt == 3) {
+
+        echo "Bienvenidos a la calculadora virtual"  ."<br/>";
+        echo "Habéis seleccionado la opción de dividir" . "<br/>";
+        $dividir = $param1 / $param2 . "<br/>";
+        echo "El resultado de la división es : ". $dividir;
+
+
+    }
+
+
+}
+
+Calculadora(20, 15, 0);
 
 
 
