@@ -164,6 +164,61 @@ Calculadora(20, 15, 0);
 
 
 
+//exercici4
+//fes un programa que implementi una funció on es compti fins un determinat nombre
+//Si no s'inclou un nombre determinat, el nombre haura de tenir un valor per defecte igual a 10
+//A mes aquesta funció ha de tenir un segon parametre que indiqui de quant a quant es compta(de 1en 1, d 2 en 2..)
+//El compte s'ha de mostrar per pantalla pas a pas
+
+
+function contar($num = 10, $increment = 1) {
+
+    for ($i = 0; $i <= $num; $i += $increment) {
+        echo $i . "<br/>";
+    }
+
+    if ($increment == 1) {
+        echo "La cuenta es de 1 en 1" . "<br/>";
+    } else if ($increment == 2) {
+        echo "La cuenta es de 2 en 2" . "<br/>";
+
+    } else if ($increment == 3) {
+        echo "La cuenta es de 3 en 3" . "<br/>";
+
+    } else if ($increment == 4) {
+        echo "La cuenta es de 4 en 4" . "<br/>";    
+
+    } else if ($increment == 5) {
+        echo "La cuenta es de 5 en 5" . "<br/>";        
+
+
+
+    }  else {
+        echo "La cuenta es de $increment en $increment" . "<br/>";
+    }
+   
+}
+
+
+//Ejemplo contando de 5 en 5
+contar(19,5);
+//Ejemplo contando de 4 en 4
+contar(19,4);
+//Ejemplo contando de 3 en 3
+contar(19,3);
+//Ejemplo contando de 2 en 2
+contar(19,2);
+//Ejemplo contando de 1 en 1
+contar(19,1);
+//Ejemplo sin valores (por defecto 10)
+contar();
+
+
+
+
+
+
+
 
 
 
