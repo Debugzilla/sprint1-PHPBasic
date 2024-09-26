@@ -170,7 +170,7 @@ Calculadora(20, 15, 0);
 //A mes aquesta funció ha de tenir un segon parametre que indiqui de quant a quant es compta(de 1en 1, d 2 en 2..)
 //El compte s'ha de mostrar per pantalla pas a pas
 
-echo "<u>Exercici 4</u>" ."<br/>";
+//echo "<u>Exercici 4</u>" ."<br/>";
 function contar($num = 10, $increment = 1) {
 
     for ($i = 0; $i <= $num; $i += $increment) {
@@ -213,16 +213,16 @@ contar(19,1);
 //Ejemplo sin valores (por defecto 10)
 contar();
 
-echo "<u>Exercici 5</u>" ."<br/>";
+echo "<u>Exercici 5</u>" ."<br/><br/>";
 function avaluar($nota) {
     if ($nota >= 60 ) {
-        echo "Es de primera división";
+        echo "Es de primera división" . "<br/>";
     } else if ($nota >= 45) {
-        echo "Es de segunda división";
+        echo "Es de segunda división" ."<br/>";
     } else if ($nota >=33) {
-        echo "Es de tercera división";
+        echo "Es de tercera división" ."<br/>";
     } else  {
-        echo "Esta suspendido";
+        echo "Esta suspendido" . "<br/>";
     }
 
     
@@ -236,8 +236,24 @@ avaluar(12) . "<br/>";
 avaluar(45) . "<br/>";
 
 
+//Charlie em va mossegar el dit Charlie et mossegara el dit exactament el 50% del temps
+// escriu una funció isBitten() que retorna TRUE amb un 50% de probabilitat i FALSE en cas contrari
+echo "<u>Exercici 6</u>" ."<br/>";
+echo "Devolver TRUE o FALSE con un 50% de probabilidad" ."<br/>";
+function isBitten() {
+    return rand(0,1);
+
+}
 
 
+if(isBitten()){
+    echo " Resultado = true";
+} else {
+    echo "Resultado = false";
+}
+
+
+isBitten();
 
 
 
